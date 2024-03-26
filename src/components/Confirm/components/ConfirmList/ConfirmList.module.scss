@@ -1,0 +1,20 @@
+@import '~styles/mixins';
+
+.list {
+    list-style: disc;
+    padding-left: 20px;
+    
+    & > li {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        
+        
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+

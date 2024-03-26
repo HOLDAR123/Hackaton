@@ -1,0 +1,24 @@
+:root {
+    --color-white: 255, 255, 255; //#fff
+    --color-black: 0, 0, 0;
+    --color-yellow: 204, 142, 53; //#cc8e35
+    --color-red: 212, 94, 94; //#d45e5e
+    --color-orange: 204, 142, 53; //#cc8e35
+    --color-green: 103, 197, 135; //#67c587
+    --color-background: 19, 17, 28; //#13111c
+    --color-main: 30, 28, 39; //#1e1c27
+    --color-main-hover: 41, 40, 50; //#292832
+    --color-second: 41, 40, 50; //#292832
+    --color-second-hover: 52, 51, 60; //#34333c;
+    --color-second-saturated: 46, 44, 54; //#2e2c36;
+    --color-gray: 179, 179, 179; //#b3b3b3
+    --color-gray-saturated: 97, 97, 97; //#616161
+
+    --box-shadow-main: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    --box-shadow-red: 1px 1px 0px 0px rgb(212, 94, 94);
+    --box-shadow-yellow: 1px 1px 0px 0px rgb(204, 142, 53);
+
+    --background-main: rgba(31, 29, 40, 0.8);
+
+    --linear-gradient-blue: linear-gradient(135.00deg, rgb(94, 63, 217) 0%,rgb(87,44,132) 52.939%,rgb(87,44,132) 100%);
+}

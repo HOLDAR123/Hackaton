@@ -1,0 +1,92 @@
+@import '~styles/mixins';
+
+.confirm {
+    $root: &;
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &Backdrop {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(19, 17, 28, 0.6);
+        z-index: 0;
+        opacity: 1;
+        backdrop-filter: blur(20px);
+        transition: .3s ease-out;
+    }
+    
+    &Window {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+        padding: 28px;
+        border-radius: 24px;
+        background: color(var(--color-background));
+        color: color(var(--color-white));
+        transition: .3s ease-out;
+        
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    &Content {
+    
+    }
+    
+    &Footer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 28px;
+    }
+    
+    &Cancel {
+    
+    }
+    
+    &Success {
+    
+    }
+}
+
+
+
+.confirmEnter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.confirmEnterActive {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.confirmExit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.confirmExitActive {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 100ms, transform 100ms;
+}

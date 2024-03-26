@@ -1,0 +1,36 @@
+@import '~styles/mixins';
+
+.container {
+  color: color(var(--color-white));
+  width: calc(100vw - 370px);
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__content {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    user-select: none;
+    font-size: 110px;
+    font-weight: 600;
+  }
+
+  &__description {
+    user-select: none;
+    font-size: 18px;
+  }
+
+  &__button {
+
+  }
+}
+

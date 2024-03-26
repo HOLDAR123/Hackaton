@@ -1,0 +1,33 @@
+@import '~styles/mixins';
+
+.pageHeader {
+  width: calc(100vw - 260px - 40px);
+  height: 60px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  left: 20px;
+  z-index: 9;
+
+  &__title {
+    color: color(var(--color-white));
+    font-size: 24px;
+    white-space: nowrap;
+    display: flex;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    &_start{
+      justify-content: start;
+    }
+    &_end{
+      justify-content: end;
+    }
+  }
+}

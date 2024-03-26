@@ -1,0 +1,12 @@
+@import '~styles/mixins';
+
+.layout {
+  &__content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,14 @@
+@import '~styles/mixins';
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+
+

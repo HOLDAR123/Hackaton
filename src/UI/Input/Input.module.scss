@@ -1,0 +1,52 @@
+@import '~styles/mixins';
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    color: color(var(--color-white));
+    font-size: 14px;
+    font-weight: 400;
+
+    &_active {
+        .input__field {
+            pointer-events: all;
+        }
+    }
+
+    &_disable {
+        .input__field {
+            pointer-events: none;
+        }
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+
+    &__field {
+        overflow: hidden;
+        display: block;
+        padding: 14px;
+        border-radius: 12px;
+        color: inherit;
+        // border: 1px solid color(var(--color-white), 0.05);
+        border: none;
+        background: color(var(--color-white), 0.05);
+        outline: none;
+        &::placeholder{
+            color: color(var(--color-white), 0.4);
+        }
+        &:focus, &:active{
+            // border: 1px solid color(var(--color-white), 0.1);
+            background: color(var(--color-white), 0.1);
+        }
+        &_error{
+            border: 1px solid color(var(--color-red));
+        }
+    }
+    &__error {
+        color: color(var(--color-red))
+    }
+}

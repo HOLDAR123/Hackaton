@@ -1,0 +1,183 @@
+@import '~styles/mixins';
+
+.calendar{
+    padding: 10px;
+    border-radius: 12px;
+    background: color(var(--color-second));
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        margin-bottom: 2px;
+        &__arrow{
+            cursor: pointer;
+            svg{
+                width: 16px;
+                height: 16px;
+            }
+            &_prev{
+                svg{
+                    transform: rotate(90deg);
+                }
+            }
+            &_next{
+                svg{
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        &__item{
+            font-weight: 500;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+    }
+    &__wrapper{
+        border-radius: 4px;
+        display: none;
+        &_active{
+            display: block;
+        }
+        &_error{
+            border: 1px solid color(var(--color-red));
+            padding: 5px;
+        }
+    }
+    &__tab{
+        gap: 4px;
+        &_day{
+            display: flex;
+            flex-direction: column;
+        }
+        &_month{
+            display: grid;
+            grid-template-columns: repeat(2, 115px);
+            grid-template-rows: repeat(6, 1fr);
+        }
+    }
+    &__month{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        border-radius: 4px;
+        background: color(var(--color-white), 0.05);
+        color: color(var(--color-white));
+        transition: 0.3s background, 0.3s color;
+        &:hover{
+            background: rgba(255, 255, 255, 0.1);
+        }
+        &_active{
+            background: var(--linear-gradient-blue);
+            &:hover{
+                background: var(--linear-gradient-blue);
+            }
+        }
+        &_disable{
+            background: none;
+            color: color(var(--color-white), 0.2);
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+    &__weeks{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        &__item{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: color(var(--color-gray));
+            &_weekend{
+                color: color(var(--color-red));
+            }
+        }
+    }
+    &__days{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        &__week{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            &__item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+                border-radius: 4px;
+                color: color(var(--color-white));
+                background: color(var(--color-white), 0.05);
+                transition: 0.3s background, 0.3s color;
+                cursor: pointer;
+                &:hover{
+                    background: color(var(--color-white), 0.15);
+                }
+                &_weekend{
+                    color: color(var(--color-white), 0.6);
+                }
+                &_current{
+                    color: color(var(--color-green));
+                }
+                &_otherMonth{
+                    color: color(var(--color-white), 0.2);
+                }
+                &_selected{
+                    background: var(--linear-gradient-blue);
+                    color: color(var(--color-white));
+                    &:hover{
+                        background: var(--linear-gradient-blue);
+                    }
+                }
+                &_disable{
+                    background: none;
+                    opacity: 0.4;
+                    cursor: default;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    &__footer{
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        &__time{
+            text-align: center;
+            cursor: pointer;
+            padding: 7px 11px;
+            border: 1px solid;
+            border-color: color(var(--color-white), 0);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            background: color(var(--color-white), 0.05);
+            transition: 0.3s background, 0.3s border-color;
+            &_error{
+                border-color: color(var(--color-red));
+            }
+        }
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

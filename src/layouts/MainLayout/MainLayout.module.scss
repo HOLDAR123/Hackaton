@@ -1,0 +1,44 @@
+@import '~styles/mixins';
+
+.layout {
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    //gap: 20px;
+    @media(max-width: 767px) {
+      grid-template-columns: 80px 1fr;
+    }
+
+    @media(max-width: 451px) {
+      grid-template-columns:  1fr;
+    }
+
+
+    &__leftPart {
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+
+      @media(max-width: 767px) {
+        width: 100px;
+
+      }
+      @media(max-width: 451px) {
+        display: none;
+      }
+
+    }
+
+    &__rightPart {
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+
+      &__content {
+        width: 100%;
+      }
+    }
+  }
+}

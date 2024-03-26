@@ -1,0 +1,276 @@
+{
+  "tips": {
+    "heading1": "Protect Personal Data Online",
+    "text1": "Practical tips for safeguarding personal information and avoiding leaks.",
+    "heading2": "Use Strong Passwords",
+    "text2": "Create complex, unique passwords for each account, including uppercase and lowercase letters, numbers, and special characters.",
+    "heading3": "Enable Two-Factor Authentication",
+    "text3": "Enhance account security by enabling two-factor authentication for an additional layer of protection.",
+    "heading4": "Be Cautious with Public Wi-Fi",
+    "text4": "Avoid sending sensitive information over unsecure Wi-Fi networks; use a VPN to encrypt internet traffic.",
+    "heading5": "Regularly Update Software",
+    "text5": "Don't delay software and operating system updates, as they include security vulnerability fixes.",
+    "heading6": "Beware of Phishing Attempts",
+    "text6": "Stay vigilant against phishing emails and messages. Avoid clicking on suspicious links or providing personal information to untrusted sources.",
+    "heading7": "Review Privacy Settings Regularly",
+    "text7": "Frequently review and adjust privacy settings on social media platforms and online accounts to ensure you're sharing information only with those you trust.",
+    "heading8": "Secure Physical Documents",
+    "text8": "Keep physical documents containing personal information in a secure location, such as a locked filing cabinet, and shred documents before disposing of them.",
+    "heading9": "Use Secure Payment Methods",
+    "text9": "Opt for secure payment methods, such as credit cards or payment platforms with buyer protection, when making online purchases to reduce the risk of financial fraud.",
+    "heading10": "Educate Yourself on Cybersecurity",
+    "text10": "Stay informed about common cybersecurity threats and best practices for online safety through reputable sources, workshops, or online courses.",
+    "heading11": "Use Encrypted Communication Channels",
+    "text11": "When sharing sensitive information online or through messaging apps, use encrypted communication channels to prevent interception by unauthorized parties.",
+    "heading12": "Monitor Your Accounts Regularly",
+    "text12": "Regularly check your bank statements, credit reports, and online accounts for any suspicious activity. Early detection can help mitigate potential damage from data breaches or identity theft."
+  },
+  "encrypted": {
+    "text": "There are two main types of encryption:",
+    "heading1": "Encryption",
+    "text1": " -is the process of converting information into an encoded format that cannot be easily read without the corresponding key. It is used in many areas to ensure confidentiality, data integrity, and authentication. Here are some examples of where encryption is used:",
+    "heading2": "Internet security",
+    "text2": "-protecting data transmitted over the internet, such as in banking operations, emails, and online shopping.",
+    "heading3": "Mobile devices",
+    "text3": "-Protecting data on smartphones and tablets, including messages, calls, and data storage.",
+    "heading4": "Computer networks",
+    "text4": "-securing data in corporate networks and during the transmission of data between devices and servers.",
+    "heading5": "Protecting confidential information",
+    "text5": " -encrypting documents containing personal information, trade secrets, and other sensitive information.",
+    "heading6": "Symmetric encryption",
+    "text6": " -uses the same key for both encryption and decryption of data. It's a fast and efficient method but requires a secure way to share the key between the sender and receiver.",
+    "heading7": "Asymmetric encryption",
+    "text7": " -uses a pair of keys — a public key for encryption and a private key for decryption. This allows for secure data exchange without worrying about the key's transmission, but the process is usually slower than symmetric encryption.",
+    "heading8": "How encryption works",
+    "text8": " Encryption is based on mathematical algorithms that transform the original data (plaintext) into encrypted text. A special key is required to revert the data back to its original form (decryption). The complexity of the algorithms and the uniqueness of the keys ensure protection against unauthorized access."
+  },
+
+  "password": {
+    "text": "- lies in the fact that it is the first and often the only defense of your personal and financial information online. A strong password can prevent unauthorized access to your accounts, protect you from cybercrime, and keep your digital life safe. Here are the main reasons to use strong passwords:",
+    "heading": "The Importance of a Strong Password",
+    "heading1": "Protection of Personal Information",
+    "heading2": "Financial Security",
+    "heading3": "Protection Against Identity Theft",
+    "heading4": "Reputation Protection",
+    "heading5": "Dictionary Attacks",
+    "heading6": "Brute Force Attacks",
+    "heading7": "Phishing",
+    "heading8": "Data Breaches",
+
+    "texxt": "How accounts are hacked due to weak passwords:",
+
+    "text1": "- many online accounts contain sensitive personal information, such as addresses, phone numbers, purchase history, and financial data. A strong password helps protect this information from unauthorized access.",
+    "text2": "- banking and payment systems, such as PayPal, require particularly strong protection, as access to these accounts can lead to direct financial losses.",
+    "text3": "- using your personal information, criminals can commit fraud, for example, taking out loans or making purchases on your behalf.",
+    "text4": "- unauthorized access to such accounts as social networks can lead to the spread of malicious content, which will harm your reputation.",
+    "text5": "- hackers use programs that automatically try thousands of common words and phrases to crack a password.",
+    "text6": "- in such an attack, automated programs are used that iterate through all possible character combinations until the correct password is found.",
+    "text7": "- fraudsters often use phishing letters and websites that mimic popular services to make the victim enter their credentials, which are then intercepted.",
+    "text8": "- if another site where you used the same password is subjected to a data breach, hackers may try to use stolen passwords on various platforms."
+  },
+
+  "dialog": {
+    "text": "Main page\nOn the main page you will find an overview of all the functions and features of our application. There is a navigation bar for easy navigation between sections of the site, including a text encryption page, a password generation page and a section with basic information about Internet security.\n\nThe text encryption page\nOn this page, you can encrypt your text using various encryption methods. You will be offered a form where you can enter text and choose your preferred encryption method. Also here you will find brief information about where encryption is used, its types and principles of operation.\n\nExample of the text encryption interface : Select the encryption method from the drop-down list, enter the text in the provided field and click the \"Encrypt\" button to see the encrypted result.\n\nPassword Generation page\nHere you can generate a strong password. The page contains a password generation form where you can specify the desired password properties, such as length, presence of characters, numbers and capital letters.\n\nExample of the password generation interface (EXAMPLE 2): Specify the required password length, select whether it should contain numbers, special characters and capital letters, then click on the \"Generate\" button to get your unique password.\n\nBasic information about Internet security\nThis section contains a small article with basic information about Internet security. You will learn why it is important to protect your personal data and what measures can be taken to ensure security on the network.\n\nSafety Tips\nWe have prepared for you at least 6 blocks of text with tips on how to secure your personal data and avoid hacking, theft of personal information. The tips relate to various aspects of security, ranging from creating a strong password to general rules of behavior on the Internet.\n\nFollow these guidelines to make your online experience as safe as possible. If you have any questions or need additional help, please refer to the help section on our website or contact our support team."
+  },
+
+  "text": {
+
+    "copy": "Copy",
+    "buttons": "Click",
+    "theme": "Our tips on how to protect yourself on the Internet:",
+    "theme1": "Use a text encryptor",
+    "theme2": "Use a password generator",
+    "copied": "Copied",
+    "text": "Your Password will be here",
+    "password": "Password length",
+    "heading": {
+      "text1": " - is ensuring the protection of personal data, information confidentiality, and protection against cyber threats when using online resources. With the increasing number of internet users and the development of digital technologies, network security is becoming increasingly important.",
+      "text2": "using reliable passwords, regularly updating software and antivirus programs, as well as cautious handling of personal data when interacting in the online environment.",
+      "text3": ", such as phishing, malware, and cyberattacks, and take precautions to avoid becoming a victim of cybercrime.",
+      "text4": " allowing users to enjoy the benefits of the online world while minimizing the risks to their security and confidentiality."
+    },
+    "include": {
+      "text1": "Uppercase:",
+      "text2": "Lowercase:",
+      "text3": "Numbers:",
+      "text4": "Symbols:"
+    },
+    "description": {
+      "text1": "Internet Security",
+      "text2": "The main aspects of internet security include:",
+      "text3": "To protect against cyber threats, it is important to be informed about the basic methods of attacks",
+      "text4": "Teaching internet security skills is an important component of digital literacy,"
+    }
+  },
+  "asideNavigation": {
+    "regPage": "Sign Up Page",
+    "reg": "Sign Up",
+    "gotoLog": "Go to login page",
+    "logPage": "Log In Page",
+    "log": "Log In",
+    "gotoReg": "Go to Registration page",
+    "main": "Home",
+    "instruction": "Instruction",
+    "textEncryptor": "Text Encryptor",
+    "passwordGenerator": "Password Generator",
+    "settings": "Settings"
+  },
+  "pages": {
+    "settings": {
+      "title": "Settings",
+      "general": {
+        "title": "General",
+        "localization": "Localization"
+      }
+    },
+    "privacy": "Privacy",
+    "error404": {
+      "title": "404",
+      "description": "The page was not found",
+      "button": "Go to the main page"
+    }
+  },
+  "buttonActions": {
+    "createUser": "Create user",
+    "copyLink": "Copy link",
+    "update": "Update",
+    "save": "Save",
+    "create": "Create",
+    "login": "Log In",
+    "confirm": "Confirm",
+    "switchLanguage": "Продолжить на Русском",
+    "reset": "Reset",
+    "apply": "Apply"
+  },
+  "tableHeaders": {
+    "name": "Name",
+    "email": "E-mail",
+    "role": "Role",
+    "status": "Status"
+  },
+  "announcementTexts": {
+    "copyLinkSuccess": "The link has been copied successfully",
+    "userCreateSuccess": "The user has been created",
+    "updateSuccess": "Successfully updated",
+    "errorUpdate": "Error during the update"
+  },
+  "inputs": {
+    "label": {
+      "name": "Name",
+      "email": "E-mail",
+      "password": "Password",
+      "confirmPassword": "Repeat password",
+      "role": "Role"
+    },
+    "placeholder": {
+      "name": "Name",
+      "email": "example@example.com",
+      "password": "Password",
+      "confirmPassword": "Password",
+      "role": "Text"
+    },
+    "errors": {
+      "required": "Required field",
+      "isEmail": "Invalid email address",
+      "passwordsMustMatch": "Passwords must match",
+      "isStrongPassword": "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter",
+      "oneOfOption": "Select one option",
+      "isHex": "Invalid format. HEX example: #000000"
+    }
+  },
+  "selects": {
+    "placeholder": "Select"
+  },
+  "cropper": {
+    "placeholder": "Drag and drop or select a photo",
+    "button": "Save",
+    "error": {
+      "type": "The file must match one of the types: {{types}}",
+      "size": "The file size must not exceed {{size}} mb"
+    }
+  },
+  "alerts": {
+    "authorization": {
+      "error": "Oops. Something went wrong. Try again later",
+      "success": "Successful login",
+      "error1": "Oops. Something went wrong. Try again later",
+      "success1": "Successful registration"
+    },
+    "updateSettings": {
+      "error": "Oops. Something went wrong. Try again later",
+      "success": "Successfully updated settings"
+    },
+    "copy": {
+      "error": "Error copying to clipboard",
+      "success": "Successfully copied to the clipboard"
+    },
+    "confirm": {
+      "error": "Oops. Something went wrong. Try again later",
+      "success": "The account is activated. You can now log in"
+    },
+    "statuses": {
+      "remove": {
+        "error": "Oops. Something went wrong. Try again later",
+        "success": "Successfully deleted"
+      },
+      "update": {
+        "error": "Oops. Something went wrong. Try again later",
+        "success": "Successfully updated"
+      },
+      "create": {
+        "error": "Oops. Something went wrong. Try again later",
+        "success": "Successfully created"
+      }
+    },
+    "tasks": {
+      "remove": {
+        "error": "Oops. Something went wrong. Try again later",
+        "success": "Successfully deleted"
+      },
+      "update": {
+        "error": "Oops. Something went wrong. Try again later",
+        "success": "Successfully updated"
+      },
+      "create": {
+        "error": "Oops. Something went wrong. Try again later",
+        "success": "Successfully created"
+      }
+    }
+  },
+  "forms": {
+    "login": "Log in to your account",
+    "confirm": "Activate your account",
+    "tasks": {
+      "label": {
+        "description": "Description:",
+        "start_date": "Start date:",
+        "deadline": "Deadline:",
+        "priority": "Priority:",
+        "at": "at",
+        "tags": "Tags:",
+        "responsible": "Responsible:"
+      },
+      "placeholder": {
+        "description": "Write the decsription...",
+        "title": "Enter a name"
+      }
+    }
+  },
+  "user": {
+    "status": {
+      "CONFIRMED": "Confirmed",
+      "NOT_CONFIRMED": "invited"
+    },
+    "rights": {
+      "ADMIN": "Administrator",
+      "USER": "User"
+    }
+  },
+  "task": {
+    "priority": {
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    }
+  }
+}

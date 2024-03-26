@@ -1,0 +1,13 @@
+@import '~styles/mixins';
+
+.tag {
+  padding: 2px 8px;
+  font-weight: 500;
+  color: color(var(--color-white));
+  width: fit-content;
+  border-radius: 12px;
+  background: color(var(--color-second-hover));
+  font-size: 12px;
+  line-height: 140%;
+  text-transform: capitalize;
+}

@@ -1,0 +1,44 @@
+@import '~styles/mixins';
+
+.settingsSection {
+    display: flex;
+    gap: 20px;
+    color: color(var(--color-white));
+
+    @media(max-width: 615px) {
+        flex-direction: column;
+    }
+
+    &__title {
+        width: 233px;
+        height: 60px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        color: color(var(---color-white));
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 12px;
+        background: color(var(--color-main));
+    }
+
+    &__content {
+        width: 100%;
+        border-radius: 12px;
+        background: color(var(--color-main));
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__main {
+
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

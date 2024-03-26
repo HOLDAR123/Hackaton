@@ -1,0 +1,27 @@
+@import '~styles/mixins';
+
+.layoutContent {
+  width: calc(100vw - 260px);
+  height: calc(100vh - 80px);
+  overflow: auto;
+
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+
+
+  @media(max-width: 451px) {
+    height: calc(90vh);
+  }
+
+
+
+  &__wrapper {
+    padding: 20px;
+
+    @media(max-width: 451px) {
+      padding: 10px;
+    }
+
+  }
+}

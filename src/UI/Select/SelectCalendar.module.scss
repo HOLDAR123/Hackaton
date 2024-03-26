@@ -1,0 +1,71 @@
+@import '~styles/mixins';
+
+.select{
+    position: relative;
+    width: fit-content;
+    min-width: 100px;
+    color: color(var(--color-white));
+    font-size: 14px;
+    &__block{
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background: color(var(--color-second));
+        transition: 0.3s background;
+        &:hover{
+            background: color(var(--color-second-hover));
+        }
+        &_open{
+            background: color(var(--color-second-hover));
+        }
+        &__arrow{
+            display: flex;
+            transition: 0.3s transform;
+            svg{
+                width: 12px;
+                height: 12px;
+            }
+            &_active{
+                transform: scaleY(-1);
+            }
+        }
+        &__input{
+            display: block;
+            width: 115px;
+            input{
+                width: inherit;
+            }
+        }
+    }
+    &__calendar{
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s opacity, 0.2s top, 0.2s visibility;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-radius: 12px;
+        background: color(var(--color-second));
+        z-index: 1;
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -4px;
+            right: 25px;
+            width: 8px;
+            height: 8px;
+            background: color(var(--color-second));
+            transform: rotate(45deg);
+        }
+        &_open{
+            opacity: 1;
+            visibility: visible;
+            top: calc(100% + 10px);
+        }
+    }
+}

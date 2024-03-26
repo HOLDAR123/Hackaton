@@ -1,0 +1,31 @@
+@import '~styles/mixins';
+
+.avatar {
+    background: var(--linear-gradient-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    user-select: none;
+    font-size: inherit;
+    overflow: hidden;
+    border-radius: 50%;
+    
+    &__picture__img {
+        object-fit: cover;
+        width: inherit;
+        height: inherit;
+        user-select: none;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    &__text {
+        color: color(var(--color-white));
+        font-size: inherit;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+    }
+}

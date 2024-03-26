@@ -1,0 +1,74 @@
+@import '~styles/mixins';
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    color: color(var(--color-white));
+    font-size: 14px;
+    font-weight: 400;
+
+    button {
+        position: absolute;
+        right: 10px;
+        padding: 5px;
+        border-radius: 20px;
+        background: color(var(--color-white), 0.14);
+        bottom: 20px;
+    }
+
+    &_active {
+        .input__field {
+            pointer-events: all;
+        }
+    }
+
+    &_disable {
+        .input__field {
+            pointer-events: none;
+        }
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+
+    &__field {
+        position: relative;
+        resize: none;
+        display: block;
+        box-sizing: border-box;
+        padding: 14px;
+        color: inherit;
+        border: none;
+        background: color(var(--color-white), 0.05);
+        outline: none;
+        max-height: 300px;
+        height: auto;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        &::placeholder{
+            color: color(var(--color-white), 0.4);
+        }
+        &:focus, &:active{
+            // border: 1px solid color(var(--color-white), 0.1);
+            background: color(var(--color-white), 0.1);
+        }
+        &_error{
+            border: 1px solid color(var(--color-red));
+        }
+    }
+    &__error {
+        color: color(var(--color-red))
+    }
+}
+
+.textAreafield{
+    border-radius: 10px 10px 0 0;
+}
+
+.vol{
+    border-radius: 10px;
+}

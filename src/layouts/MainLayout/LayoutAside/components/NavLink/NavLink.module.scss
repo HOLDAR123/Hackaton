@@ -1,0 +1,79 @@
+@import '~styles/mixins';
+
+.navLink {
+    padding: 10px 14px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-radius: 200px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+
+    @media(max-width: 767px) {
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    &__rightPart {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: color(var(--color-white));
+        justify-content: space-between;
+        font-size: 14px;
+
+        @media(max-width: 767px) {
+            display: none;
+        }
+
+
+        &__button {
+            display: flex;
+            width: 24px;
+            height: 24px;
+            z-index: 99;
+            justify-content: center;
+            align-items: center;
+            border-radius: 200px;
+            background: color(var(--color-white), 0.05);
+            position: absolute;
+            overflow: hidden;
+            right: 8px;
+            transition: background 0.2s ease-in-out;
+
+            &:hover {
+                background: color(var(--color-white), 0.1);
+            }
+
+            svg {
+                transition: transform 0.2s ease-in-out;
+                transform: rotate(-90deg);
+            }
+
+            &__active {
+                svg {
+                    transform: rotate(-90deg) scale(-1);
+                }
+            }
+        }
+
+    }
+}
+
+.active {
+    background: var(--linear-gradient-blue);
+}
+
+.disabled {
+    transition: all 0.2s linear;
+
+    &:hover {
+        background: color(var(--color-second));
+    }
+}

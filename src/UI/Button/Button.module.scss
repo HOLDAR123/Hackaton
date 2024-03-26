@@ -1,0 +1,24 @@
+@import '~styles/mixins';
+
+.button {
+    text-align: center;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    gap: 10px;
+    transition: opacity 0.3s linear;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 160%;
+    background:var(--linear-gradient-blue);
+    color: color(var(--color-white));
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    &[disabled] {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+}
